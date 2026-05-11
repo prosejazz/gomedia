@@ -433,7 +433,7 @@ func (client *RtspClient) handleDescribe(res *RtspResponse) (err error) {
 	}
 
 	if client.sdpContext.ControlUrl == "" {
-		return errors.New("unsupport empty aggregate control url in session level descriptions")
+		client.sdpContext.ControlUrl = "*"
 	}
 	client.sdpContext.ControlUrl = getControlUrl(client.sdpContext.ControlUrl)
 	for _, media := range client.sdpContext.Medias {
