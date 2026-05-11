@@ -6,8 +6,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/yapingcat/gomedia/go-mp4"
-	"github.com/yapingcat/gomedia/go-mpeg2"
+	"github.com/prosejazz/gomedia/go-mp4"
+	"github.com/prosejazz/gomedia/go-mpeg2"
 )
 
 func main() {
